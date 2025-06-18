@@ -1,0 +1,236 @@
+<!-- Create a Responsive Header Using Offcanvas Component. -->
+
+<!-- Create a responsive GRID layout Using Column Class and offset property and add images and content. -->
+
+<!-- Create a Banner design Using a Carousel Component. -->
+
+<!--  Create a User registration form Using Form Component. -->
+
+<!-- Create an FAQ Section Using the accordion Component and add a font utility class to format the text. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce</title>
+  
+  <!-- tab image -->
+  <link rel="icon" type="image" href="assets/imgs//fav/logo_2.png">
+
+  <!-- bootstrap file /\ -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+  <!-- css file  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- offline font  -->
+  <link rel="stylesheet" href="./assets/css/offline.css">
+
+
+  <!-- <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+  <header>
+  
+
+<nav class="navbar navbar-expand-lg bg-light border-bottom">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="https://azim.hostlin.com/Kiddex/assets/images/logo.png" alt="logo" height="40">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-2">
+       <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+  </header>
+
+ <main>
+  <section class="banner">
+  <div id="mainBanner" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/slider/slider-5.png" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fw-bold text-black">Big Sale Is Live!</h2>
+          <p class="fs-5 text-primary">Up to 50% off on all categories</p>
+          <a href="#" class="btn btn-primary">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/slider/slider-6.png" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fw-bold text-black">Fresh Arrivals Just In</h2>
+          <p class="fs-5 text-dark">Explore the latest products</p>
+          <a href="#" class="btn btn-outline-dark">Explore</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainBanner" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainBanner" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+
+<!-- GRID  -->
+<section class="py-5" style="background-color: #F2F2F2;">
+  <div class="container">
+
+    <!-- 🔄 Marquee Strip -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="bg-dark text-white px-4 py-2 rounded-pill overflow-hidden" style="height: 60px;">
+          <marquee behavior="scroll" direction="left" scrollamount="6" class="d-flex align-items-center">
+            <span class="me-4">🚚 Free Delivery on Orders ₹999+</span>
+            <span class="me-4">🔥 Summer Deals Upto 70% Off</span>
+            <span class="me-4">🎁 Sign Up & Get ₹200 Off</span>
+          </marquee>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+  
+      <div class="col-md-6">
+        <div class="card h-100 p-4 text-white border-0" style="background-color: #343A40; border-radius: 20px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-5">
+              <img src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/icons/category-9.svg" class="img-fluid rounded" alt="product image">
+            </div>
+            <div class="col-7 ps-3">
+              <p class="text-warning mb-1">🔥 HOT PRODUCT</p>
+              <h5 class="fw-bold text-white mb-2">Wireless Headphones</h5>
+              <p class="text-light small">Noise cancellation. Lightweight. Just ₹1,999</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shop by Category -->
+      <div class="col-md-3">
+        <div class="card h-100 p-4 border-0 text-white" style="background-color: #6C757D; border-radius: 20px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" class="mb-3" style="width: 45px;">
+          <small class="text-light">EXPLORE</small>
+          <h5 class="fw-bold">Shop Categories</h5>
+        </div>
+      </div>
+
+      <!-- Deals of the Day -->
+      <div class="col-md-3">
+        <div class="card h-100 p-4 border-0 text-white" style="background-color: #495057; border-radius: 20px;">
+          <small class="text-light">LIMITED OFFER</small>
+          <h5 class="fw-bold">Deals of the Day</h5>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row g-4 mt-4">
+
+      <!-- Blog / Style Guide -->
+      <div class="col-md-3">
+        <div class="card h-100 p-4 border-0 text-white" style="background-color: #1E1E2F; border-radius: 20px;">
+          <img src="https://demo.xpeedstudio.com/marketov2/wp-content/uploads/2018/05/30-1.png" height="180px"  width="250px" class="mb-3" alt="blog">
+          <small class="text-secondary">FASHION BLOG</small>
+          <h5 class="fw-bold">Style Guide</h5>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="col-md-6 col-12">
+        <div class="card h-100 p-5 border-0 text-white rounded-4" style="background-color: #2D2D3A;">
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <i class="bi bi-truck fs-3"></i>
+            <i class="bi bi-credit-card fs-3"></i>
+            <i class="bi bi-box fs-3"></i>
+            <i class="bi bi-arrow-repeat fs-3"></i>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <small class="text-uppercase text-secondary">SERVICES</small>
+              <h5 class="fw-bold text-white mb-0">What We Offer</h5>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="col-md-3 col-6">
+        <div class="card h-100 p-5 text-white border-0" style="background: linear-gradient(135deg, #3A3B3C, #1F1F1F); border-radius: 20px;">
+          <div class="text-center mb-4">
+          🎁
+          </div>
+          <div class="text-center">
+            <small class="text-secondary">EXCLUSIVE</small>
+            <h5 class="fw-bold mb-1">Gift Cards</h5>
+            <p class="text-light small mb-2">Send love, instantly.</p>
+            <button class="btn btn-outline-light btn-sm rounded-pill px-3">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+ </main>
+
+
+ 
+
+
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+ 
+</body>
+
+</html>
